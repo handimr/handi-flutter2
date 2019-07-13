@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:handi/h2.dart';
-import 'package:handi/login_page.dart';
-import 'package:handi/login_page2.dart';
 
-class LoginPage1 extends StatefulWidget {
-  static String tag = 'login-page';
+import 'package:handi/login_page.dart';
+
+class LoginPage2 extends StatefulWidget {
+  static String tag = 'login-page2';
   @override
-  _LoginPageState1 createState() => _LoginPageState1();
+  _LoginPageState2 createState() => _LoginPageState2();
 }
 
-class _LoginPageState1 extends State<LoginPage1> {
+class _LoginPageState2 extends State<LoginPage2> {
   @override
   Widget build(BuildContext context) {
     final logo = Hero(
@@ -22,7 +22,7 @@ class _LoginPageState1 extends State<LoginPage1> {
     );
 
     final email = TextField(
-      decoration: InputDecoration(labelText: 'Email'),
+      decoration: InputDecoration(labelText: 'Email / Username Facebook'),
     );
 
     final password = TextField(
